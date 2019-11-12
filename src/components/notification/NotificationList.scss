@@ -1,0 +1,66 @@
+.main-content-container {
+    height: calc(100vh - 60px);
+    overflow: auto;
+}
+
+
+.comment-widgets {
+    position: relative;
+	margin-bottom: 0;
+	max-height: calc(100vh - 190px);
+    overflow: auto;
+}
+
+.comment-widgets .comment-row {
+    border-bottom: 1px solid rgba(120,130,140,.13);
+    padding:10px 15px;
+    display: flex;
+    margin: 10px 0
+}
+
+.comment-widgets .comment-row:last-child {
+    border-bottom: 0
+}
+
+.comment-widgets .comment-row.active,.comment-widgets .comment-row:hover {
+    background: rgba(0,0,0,.03)
+}
+
+.comment-text {
+    padding-left: 15px;
+    width: 100%;
+    @media screen and (max-width:767px){
+        padding-left: 10px;
+    }
+}
+.comment-text h5{
+    @media screen and (max-width:767px){
+        flex-wrap: wrap;
+    }
+}
+.comment-text h5 span{
+    @media screen and (max-width:767px){
+        width: calc(100% - 33px);
+        order:0
+    }
+}
+.comment-text h5 button{
+    @media screen and (max-width:767px){
+        order:1
+    }
+}
+.comment-text h5 small{
+    margin-left:10px;
+    font-size: 12px;
+    @media screen and (max-width:767px){
+        padding-left: 0;
+        width: calc(100% - 33px);
+        margin: 0 !important;
+        order:2
+    }
+}
+.comment-text p {
+    max-height: 65px;
+    width: 100%;
+    overflow: hidden
+}

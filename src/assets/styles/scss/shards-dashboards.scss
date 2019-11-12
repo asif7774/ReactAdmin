@@ -1,0 +1,33 @@
+
+
+// Base Shards UI Kit
+@import "./shards-ui/shards.scss";
+
+/* Shards Dashboards Lite Styles */
+
+// Core
+@import "variables";
+
+
+
+// Blocks
+@import "blocks/main-navbar";
+@import "blocks/main-sidebar";
+@import "blocks/main-content";
+@import "blocks/main-footer";
+@import "blocks/page-header";
+
+// Templates
+@import "templates/common"; // Required common styles for all pages.
+@import "templates/blog-overview";
+@import "templates/blog-add-new-post";
+
+// Plugins
+@import "plugins/quill";
+
+// Components
+@import "components/card-post";
+@import "components/error";
+
+//custom
+@import "custom";
